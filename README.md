@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Hassan Jamil — Principal Cyber Security Architect & DFIR Specialist</title>
+  <title>Ali Hassan Jamil — Principal Cyber Security Architect & GitHub README Studio</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +48,7 @@
         linear-gradient(to bottom, rgba(30, 41, 59, 0.25) 1px, transparent 1px);
     }
     .glow-cyan {
-      box-shadow: 0 0 25px rgba(0, 242, 254, 0.15);
+      box-shadow: 0 0 25px rgba(0, 242, 254, 0.18);
     }
     .glow-emerald {
       box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
@@ -89,7 +89,7 @@
   </div>
 
   <!-- Top Sticky Navigation Bar -->
-  <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md">
+  <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
       <div class="flex items-center gap-3">
         <div class="flex h-10 w-10 items-center justify-center rounded-xl border border-cyan-500/40 bg-cyan-500/10 text-cyan-400">
@@ -105,58 +105,139 @@
       </div>
 
       <nav class="flex flex-wrap items-center gap-2">
+        <a href="#github-readme" class="rounded-lg px-3 py-1.5 font-mono text-xs font-semibold text-cyan-300 hover:bg-slate-800">GitHub README</a>
         <a href="#arsenal" class="rounded-lg px-3 py-1.5 font-mono text-xs text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Skill Options</a>
         <a href="#terminal" class="rounded-lg px-3 py-1.5 font-mono text-xs text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Live Terminal</a>
         <a href="#operations" class="rounded-lg px-3 py-1.5 font-mono text-xs text-slate-300 hover:bg-slate-800 hover:text-cyan-400">Operations</a>
-        <a href="#github-readme" class="rounded-lg px-3 py-1.5 font-mono text-xs text-slate-300 hover:bg-slate-800 hover:text-cyan-400">GitHub README</a>
-        <button id="topCopyReadmeBtn" type="button" class="flex items-center gap-1.5 rounded-lg bg-cyan-500 px-3.5 py-1.5 font-mono text-xs font-bold text-slate-950 shadow-lg hover:bg-cyan-400 transition">
-          <i data-lucide="copy" class="h-3.5 w-3.5"></i> Copy GitHub README
+        <button id="topCopyReadmeBtn" type="button" class="flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-cyan-400 to-emerald-400 px-4 py-2 font-mono text-xs font-extrabold text-slate-950 shadow-lg hover:opacity-95 transition">
+          <i data-lucide="copy" class="h-4 w-4"></i> Copy GitHub README
         </button>
       </nav>
     </div>
   </header>
 
-  <main class="mx-auto max-w-7xl space-y-12 px-4 py-8 sm:px-6">
+  <main class="mx-auto max-w-7xl space-y-10 px-4 py-6 sm:px-6">
+
+    <!-- IMPORTANT FIX EXPLANATION + 1-CLICK COPY BOX RIGHT AT THE TOP -->
+    <section id="github-readme" class="rounded-3xl border-2 border-cyan-400/60 bg-slate-900/95 p-6 sm:p-8 glow-cyan">
+      <div class="flex flex-col justify-between gap-4 border-b border-slate-800 pb-5 lg:flex-row lg:items-center">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 rounded-full bg-rose-500/15 border border-rose-500/40 px-3 py-1 font-mono text-xs font-bold text-rose-300">
+            <i data-lucide="alert-triangle" class="h-3.5 w-3.5"></i>
+            WHY COPY-PASTING FROM THE "CODE" TAB DIDN'T WORK ON GITHUB:
+          </div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-white">
+            Don't copy the HTML file code — Click the Green Button below!
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            GitHub's <code class="text-cyan-300 font-mono">README.md</code> blocks HTML <code class="text-rose-300 font-mono">&lt;script&gt;</code> and <code class="text-rose-300 font-mono">&lt;style&gt;</code> tags. I built a **100% GitHub-Native Animated & Clickable Markdown Code** below (with animated SVG header, glowing badges, **clickable expandable skill menus**, and dark telemetry cards) that works inside GitHub <code class="text-cyan-300 font-mono">README.md</code>!
+          </p>
+        </div>
+
+        <button id="bottomCopyReadmeBtn" type="button" class="shrink-0 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-6 py-4 font-mono text-sm font-extrabold text-slate-950 shadow-2xl hover:scale-[1.02] transition">
+          <i data-lucide="copy" class="h-5 w-5"></i> Copy Raw Markdown for GitHub
+        </button>
+      </div>
+
+      <!-- Exact Preview of What GitHub Renders (Animated SVG + Clickable <details> Menus) -->
+      <div class="mt-6 grid gap-6 lg:grid-cols-12">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-400">
+            1. Live Preview of How Your GitHub README Will Look & Work on GitHub:
+          </span>
+          <div class="rounded-2xl border border-slate-800 bg-[#0d1117] p-4 space-y-4">
+            <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,50:0b1d2e,100:00f2fe&height=170&section=header&text=ALI%20HASSAN%20JAMIL&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=MASTER%20OF%20CYBER%20SECURITY%20%26%20DFIR%20%7C%20PYTHON%20%26%20MERN%20ENGINEER&descAlignY=58&descSize=14" class="w-full rounded-xl" alt="GitHub Banner Preview" />
+            <div class="flex justify-center">
+              <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2600&pause=700&color=00F2FE&center=true&vCenter=true&width=700&lines=%5BMASTER+PROFESSION%5D+%E2%86%92+Cyber+Security+%26+Digital+Forensics+Architect;%5BOFFENSIVE+%26+DEFENSIVE%5D+%E2%86%92+DFIR+%7C+Wireshark+DPI+%7C+Burp+Suite+PenTesting;%5BDEVELOPMENT+SKILLS%5D+%E2%86%92+Python+Cryptography+%7C+MERN+Stack+%7C+MS+SQL" alt="Typing Preview" class="max-w-full h-auto" />
+            </div>
+
+            <p class="font-mono text-xs text-slate-400">
+              👇 On GitHub, visitors can click any of these 5 Skill Options right inside your README to expand/collapse them:
+            </p>
+
+            <!-- Real Native HTML <details> Accordions (Identical to GitHub README rendering) -->
+            <div class="space-y-2 text-xs">
+              <details open class="rounded-xl border border-cyan-500/30 bg-slate-900/90 p-3">
+                <summary class="cursor-pointer font-mono font-bold text-cyan-300">
+                  🕵️‍♂️ OPTION 1 — MASTER PROFESSION: Digital Forensics &amp; Incident Response (DFIR)
+                </summary>
+                <div class="mt-2 border-t border-slate-800 pt-2 text-slate-300 space-y-1">
+                  <p>• <b>Autopsy &amp; Registry Forensics:</b> SAM, SYSTEM, NTUSER.DAT hive reconstruction &amp; user activity timelines.</p>
+                  <p>• <b>Disk &amp; Memory Acquisition:</b> Bit-stream imaging (E01/dd) with FTK Imager, PALADIN OS, DumpIt &amp; Bulk Extractor.</p>
+                </div>
+              </details>
+
+              <details class="rounded-xl border border-cyan-500/30 bg-slate-900/90 p-3">
+                <summary class="cursor-pointer font-mono font-bold text-cyan-300">
+                  🌐 OPTION 2 — MASTER PROFESSION: Network Security, SOC &amp; Deep Packet Inspection
+                </summary>
+                <div class="mt-2 border-t border-slate-800 pt-2 text-slate-300 space-y-1">
+                  <p>• <b>Wireshark &amp; tcpdump DPI:</b> Live traffic dissection, SYN scan detection &amp; anomalous DNS/HTTP hunting.</p>
+                  <p>• <b>Network Defense &amp; Auditing:</b> Nmap enumeration, Suricata IDS rules, Aircrack-ng &amp; VLAN segmentation.</p>
+                </div>
+              </details>
+
+              <details class="rounded-xl border border-cyan-500/30 bg-slate-900/90 p-3">
+                <summary class="cursor-pointer font-mono font-bold text-cyan-300">
+                  🎯 OPTION 3 — MASTER PROFESSION: Offensive Penetration Testing &amp; Web Security
+                </summary>
+                <div class="mt-2 border-t border-slate-800 pt-2 text-slate-300 space-y-1">
+                  <p>• <b>OWASP Top 10 Auditing:</b> Burp Suite request interception, IDOR / Broken Access Control &amp; SQL/NoSQL Injection testing.</p>
+                  <p>• <b>Session &amp; Token Exploitation:</b> JWT signature auditing, HttpOnly/Secure cookie hardening &amp; Kali Linux OSINT.</p>
+                </div>
+              </details>
+
+              <details class="rounded-xl border border-emerald-500/30 bg-slate-900/90 p-3">
+                <summary class="cursor-pointer font-mono font-bold text-emerald-300">
+                  🐍 OPTION 4 — CORE ENGINEERING SKILL: Python Cryptography &amp; Socket Servers
+                </summary>
+                <div class="mt-2 border-t border-slate-800 pt-2 text-slate-300 space-y-1">
+                  <p>• <b>Cryptographic Protocols:</b> Python 3.11, ECDSA digital signatures (SECP256k1), SHA-256 hash chains &amp; custom ciphers.</p>
+                  <p>• <b>Network Automation:</b> Multi-threaded TCP socket servers (GoofyCoin engine), security scanners &amp; OpenCV.</p>
+                </div>
+              </details>
+
+              <details class="rounded-xl border border-amber-500/30 bg-slate-900/90 p-3">
+                <summary class="cursor-pointer font-mono font-bold text-amber-300">
+                  💻 OPTION 5 — SUPPORTING SKILL: Full-Stack MERN, Enterprise SQL &amp; x86 Assembly
+                </summary>
+                <div class="mt-2 border-t border-slate-800 pt-2 text-slate-300 space-y-1">
+                  <p>• <b>Secure MERN Stack:</b> Node.js, Express.js, React.js &amp; MongoDB Atlas with JWT &amp; Role-Based Access Control (RBAC).</p>
+                  <p>• <b>Enterprise SQL &amp; Systems:</b> 10-table normalized MS SQL Server (T-SQL) databases &amp; 16-bit 8086 Assembly (EMU8086).</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Raw Markdown Box to Copy -->
+        <div class="lg:col-span-5 flex flex-col justify-between space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-bold uppercase tracking-wider text-cyan-400">
+              2. Raw GitHub Markdown Code (Paste into README.md):
+            </span>
+          </div>
+          <pre id="readmeCodeBlock" class="h-[420px] overflow-y-auto rounded-2xl border border-slate-800 bg-slate-950 p-4 font-mono text-[11px] leading-relaxed text-emerald-300 select-all"></pre>
+        </div>
+      </div>
+    </section>
 
     <!-- HERO EXECUTIVE COMMAND SECTION -->
-    <section class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/75 p-6 sm:p-10 glow-cyan">
+    <section class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/75 p-6 sm:p-10">
       <div class="grid gap-8 lg:grid-cols-12 lg:items-center">
         <div class="lg:col-span-7 space-y-5">
           <div class="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3.5 py-1 font-mono text-xs text-cyan-300">
             <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
-            EXECUTIVE CYBER DEFENSE & DIGITAL FORENSICS COMMAND
+            EXECUTIVE CYBER DEFENSE &amp; DIGITAL FORENSICS COMMAND
           </div>
 
           <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-5xl leading-tight">
-            Master of <span class="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Cyber Security & DFIR</span>. Engineered with Python & MERN.
+            Master of <span class="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Cyber Security &amp; DFIR</span>. Engineered with Python &amp; MERN.
           </h1>
 
           <p class="text-sm sm:text-base leading-relaxed text-slate-300">
-            Operating with the architectural depth of a seasoned **Principal Cyber Security & Digital Forensics Specialist**, my primary profession is **Offensive/Defensive Cyber Security, Deep Packet Inspection, and Forensic Incident Investigation (DFIR)**—reinforced by advanced engineering skills in **Python Cryptography, Enterprise SQL Databases, and Secure Full-Stack MERN Development**.
+            My master profession is **Offensive/Defensive Cyber Security, Deep Packet Inspection, and Digital Forensics Incident Response (DFIR)**—backed by supporting engineering mastery in **Python Cryptography, Enterprise SQL Databases, and Secure Full-Stack MERN Development**.
           </p>
-
-          <!-- Master vs Supporting Role Callout Pills -->
-          <div class="grid gap-3 sm:grid-cols-2 pt-1">
-            <div class="rounded-2xl border border-cyan-500/40 bg-slate-950/80 p-4">
-              <div class="flex items-center gap-2 font-mono text-xs font-bold text-cyan-400">
-                <i data-lucide="shield-alert" class="h-4 w-4"></i>
-                MASTER PROFESSION (CORE)
-              </div>
-              <p class="mt-1.5 text-xs font-medium text-slate-200">
-                Cyber Security Architecture, Digital Forensics (Autopsy, FTK, PALADIN), Network Defense (Wireshark, Nmap, Suricata) & Web PenTesting (Burp Suite, OWASP).
-              </p>
-            </div>
-
-            <div class="rounded-2xl border border-emerald-500/30 bg-slate-950/80 p-4">
-              <div class="flex items-center gap-2 font-mono text-xs font-bold text-emerald-400">
-                <i data-lucide="code-2" class="h-4 w-4"></i>
-                SECONDARY ENGINEERING SKILLS
-              </div>
-              <p class="mt-1.5 text-xs font-medium text-slate-200">
-                Python Cryptographic Socket Servers (ECDSA, SHA-256), Full-Stack MERN (Node.js, Express, React, MongoDB), Enterprise MS SQL Server & 8086 Assembly.
-              </p>
-            </div>
-          </div>
 
           <div class="flex flex-wrap items-center gap-3 pt-2">
             <a href="https://www.linkedin.com/in/alihassanjamil-cyber" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white hover:bg-blue-500 transition">
@@ -165,39 +246,20 @@
             <a href="https://github.com/alihassanjamil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2.5 text-xs font-semibold text-white hover:border-cyan-400 transition">
               <i data-lucide="github" class="h-4 w-4"></i> github.com/alihassanjamil
             </a>
-            <a href="mailto:alipowerhassan@gmail.com" class="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:border-emerald-400 hover:text-emerald-300 transition">
-              <i data-lucide="mail" class="h-4 w-4"></i> alipowerhassan@gmail.com
-            </a>
           </div>
         </div>
 
-        <!-- Right Column: Live Python Security Dossier Card -->
         <div class="lg:col-span-5">
           <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 shadow-2xl">
             <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-              <div class="flex items-center gap-2">
-                <span class="h-3 w-3 rounded-full bg-rose-500"></span>
-                <span class="h-3 w-3 rounded-full bg-amber-500"></span>
-                <span class="h-3 w-3 rounded-full bg-emerald-500"></span>
-                <span class="ml-2 font-mono text-xs text-slate-400">root@alihassanjamil:~# python3 master_profile.py</span>
-              </div>
+              <span class="font-mono text-xs text-slate-400">root@alihassanjamil:~# python3 master_profile.py</span>
               <span class="rounded bg-cyan-500/10 px-2 py-0.5 font-mono text-[10px] text-cyan-400">PYTHON 3.11</span>
             </div>
             <pre class="mt-3 overflow-x-auto font-mono text-xs leading-relaxed text-slate-200"><span class="text-rose-400">class</span> <span class="text-cyan-400 font-bold">CyberSecurityMaster</span>:
     <span class="text-rose-400">def</span> <span class="text-emerald-400">__init__</span>(self):
         self.operator = <span class="text-amber-300">"Ali Hassan Jamil"</span>
         self.master_profession = <span class="text-amber-300">"Cyber Security &amp; Digital Forensics"</span>
-        self.doctrine = <span class="text-amber-300">"Zero-Trust | DFIR | Offensive Defense"</span>
-
-    <span class="text-rose-400">def</span> <span class="text-emerald-400">master_arsenal</span>(self):
-        <span class="text-rose-400">return</span> {
-            <span class="text-cyan-300">"DFIR"</span>: [<span class="text-amber-300">"Autopsy"</span>, <span class="text-amber-300">"FTK Imager"</span>, <span class="text-amber-300">"PALADIN"</span>, <span class="text-amber-300">"DumpIt"</span>],
-            <span class="text-cyan-300">"NetSec"</span>: [<span class="text-amber-300">"Wireshark"</span>, <span class="text-amber-300">"Nmap"</span>, <span class="text-amber-300">"Suricata"</span>, <span class="text-amber-300">"Kali"</span>],
-            <span class="text-cyan-300">"PenTest"</span>: [<span class="text-amber-300">"Burp Suite"</span>, <span class="text-amber-300">"OWASP Top 10"</span>, <span class="text-amber-300">"IDOR/SQLi"</span>]
-        }
-
-    <span class="text-rose-400">def</span> <span class="text-emerald-400">development_skills</span>(self):
-        <span class="text-rose-400">return</span> [<span class="text-amber-300">"Python ECDSA/Sockets"</span>, <span class="text-amber-300">"MERN Stack"</span>, <span class="text-amber-300">"MS SQL"</span>]</pre>
+        self.supporting_skills = [<span class="text-amber-300">"Python Crypto"</span>, <span class="text-amber-300">"MERN Stack"</span>, <span class="text-amber-300">"MS SQL"</span>]</pre>
           </div>
         </div>
       </div>
@@ -209,17 +271,15 @@
         <div>
           <span class="font-mono text-xs font-semibold uppercase tracking-widest text-cyan-400">Interactive Skill Selector</span>
           <h2 class="mt-1 text-2xl font-bold text-white sm:text-3xl">Master Profession vs. Supporting Technical Skills</h2>
-          <p class="mt-1 text-sm text-slate-400">Select any option below to filter your **Master Cyber Security Domains** or your **Supporting Development Skills (Python, MERN, SQL)**.</p>
         </div>
         <div class="flex items-center gap-2">
           <div class="relative">
-            <i data-lucide="search" class=" absolute left-3 top-2.5 h-4 w-4 text-slate-500"></i>
+            <i data-lucide="search" class="absolute left-3 top-2.5 h-4 w-4 text-slate-500"></i>
             <input id="skillSearchInput" type="text" placeholder="Filter tool (e.g. Wireshark, Python, MERN)..." class="w-64 rounded-xl border border-slate-800 bg-slate-900 pl-9 pr-3 py-2 text-xs text-white placeholder-slate-500 focus:border-cyan-400 focus:outline-none" />
           </div>
         </div>
       </div>
 
-      <!-- Interactive Category Option Buttons -->
       <div id="skillCategoryTabs" class="flex flex-wrap gap-2">
         <button type="button" data-cat="all" class="skill-tab rounded-xl border border-cyan-400 bg-cyan-500/20 px-4 py-2 font-mono text-xs font-bold text-cyan-300 transition">
           All Arsenal (18)
@@ -241,22 +301,17 @@
         </button>
       </div>
 
-      <!-- Dynamic Skill Cards Grid -->
       <div id="skillsGrid" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
     </section>
 
     <!-- INTERACTIVE CYBER COMMAND TERMINAL -->
     <section id="terminal" class="space-y-4">
-      <div class="flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
-        <div>
-          <span class="font-mono text-xs font-semibold uppercase tracking-widest text-emerald-400">Live Command Simulator</span>
-          <h2 class="mt-1 text-2xl font-bold text-white">Interactive Cyber Operations Console</h2>
-        </div>
-        <p class="font-mono text-xs text-slate-400">Click any preset command below to execute a live forensic or security trace</p>
+      <div>
+        <span class="font-mono text-xs font-semibold uppercase tracking-widest text-emerald-400">Live Command Simulator</span>
+        <h2 class="mt-1 text-2xl font-bold text-white">Interactive Cyber Operations Console</h2>
       </div>
 
       <div class="rounded-2xl border border-slate-800 bg-slate-950 p-4 sm:p-6 shadow-2xl glow-emerald">
-        <!-- Quick Command Buttons -->
         <div class="mb-4 flex flex-wrap gap-2 border-b border-slate-800 pb-4">
           <button type="button" data-cmd="clearance" class="term-btn rounded-lg border border-cyan-500/40 bg-cyan-500/10 px-3 py-1.5 font-mono text-xs text-cyan-300 hover:bg-cyan-500/20">
             $ ./verify_master_profession.sh
@@ -275,7 +330,7 @@
           </button>
         </div>
 
-        <div id="terminalOutput" class="min-h-[190px] font-mono text-xs leading-relaxed text-emerald-400 whitespace-pre-wrap"></div>
+        <div id="terminalOutput" class="min-h-[170px] font-mono text-xs leading-relaxed text-emerald-400 whitespace-pre-wrap"></div>
       </div>
     </section>
 
@@ -287,24 +342,6 @@
       </div>
 
       <div id="projectsGrid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
-    </section>
-
-    <!-- ONE-CLICK GITHUB PROFILE README.MD GENERATOR -->
-    <section id="github-readme" class="rounded-3xl border border-cyan-500/30 bg-slate-900/80 p-6 sm:p-8">
-      <div class="flex flex-col justify-between gap-4 border-b border-slate-800 pb-5 sm:flex-row sm:items-center">
-        <div>
-          <span class="rounded bg-cyan-500/15 px-2.5 py-1 font-mono text-xs font-bold text-cyan-300">READY FOR GITHUB.COM/ALIHASSANJAMIL</span>
-          <h2 class="mt-2 text-2xl font-bold text-white">Your Clean GitHub Profile `README.md` Code</h2>
-          <p class="mt-1 text-xs sm:text-sm text-slate-400">
-            Click **Copy Raw Markdown** below and paste it directly into your `alihassanjamil/alihassanjamil` repository on GitHub.
-          </p>
-        </div>
-        <button id="bottomCopyReadmeBtn" type="button" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 to-emerald-400 px-5 py-3 font-mono text-xs font-bold text-slate-950 shadow-xl hover:opacity-95 transition">
-          <i data-lucide="copy" class="h-4 w-4"></i> Copy Raw Markdown for GitHub
-        </button>
-      </div>
-
-      <pre id="readmeCodeBlock" class="mt-4 max-h-96 overflow-y-auto rounded-2xl border border-slate-800 bg-slate-950 p-4 font-mono text-xs leading-relaxed text-slate-300"></pre>
     </section>
 
   </main>
@@ -467,7 +504,7 @@
         code: `# Forensic Verification Workflow (DFIR Lab)
 [1] Acquire bit-stream image -> Mantooth.E01 (Write-Blocked via PALADIN)
 [2] Verify integrity         -> SHA256: 9f86d081884c7d659a2feaa0c55ad015...
-[3] Parse Registry Hives     ->C:\\Windows\\System32\\config\\SAM & SYSTEM
+[3] Parse Registry Hives     -> C:\\Windows\\System32\\config\\SAM & SYSTEM
 [4] Extract Volatile Strings -> bulk_extractor -o output_dir memory_dump.raw
 [STATUS] 100% Artifact Chain Preserved for Court-Admissible Report`
       },
@@ -588,28 +625,36 @@ END;`
 [✓] Injection Defense   : Mongoose schema sanitization & parameterized queries active.`
     };
 
-    const CLEAN_GITHUB_README = `# 🛡️ Ali Hassan Jamil — Cyber Security & Digital Forensics Specialist
+    const CLEAN_GITHUB_README = `<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,50:0b1d2e,100:00f2fe&height=210&section=header&text=ALI%20HASSAN%20JAMIL&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=MASTER%20OF%20CYBER%20SECURITY%20%26%20DFIR%20%7C%20PYTHON%20%26%20MERN%20ENGINEER&descAlignY=58&descSize=15" width="100%" />
 
-**Master Profession:** Cyber Security, Digital Forensics (DFIR), Network Defense & Web Penetration Testing  
-**Supporting Engineering Skills:** Python Cryptographic Engineering • Secure MERN Stack (Node.js, Express, React, MongoDB) • Enterprise MS SQL Server • x86 Assembly  
-**LinkedIn:** [linkedin.com/in/alihassanjamil-cyber](https://www.linkedin.com/in/alihassanjamil-cyber) | **Email:** [alipowerhassan@gmail.com](mailto:alipowerhassan@gmail.com)
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2600&pause=700&color=00F2FE&center=true&vCenter=true&width=880&lines=%5BMASTER+PROFESSION%5D+%E2%86%92+Cyber+Security+%26+Digital+Forensics+Architect;%5BOFFENSIVE+%26+DEFENSIVE%5D+%E2%86%92+DFIR+%7C+Wireshark+DPI+%7C+Burp+Suite+PenTesting;%5BDEVELOPMENT+SKILLS%5D+%E2%86%92+Python+Cryptography+%7C+MERN+Stack+%7C+Enterprise+SQL" alt="Typing SVG" />
+  </a>
+
+  <p align="center">
+    <a href="https://www.linkedin.com/in/alihassanjamil-cyber"><img src="https://img.shields.io/badge/LINKEDIN-ALI_HASSAN_JAMIL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+    <a href="mailto:alipowerhassan@gmail.com"><img src="https://img.shields.io/badge/EMAIL-ALIPOWERHASSAN%40GMAIL.COM-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+    <a href="https://github.com/alihassanjamil"><img src="https://img.shields.io/badge/MASTER_DOMAIN-CYBER_SECURITY_%26_DFIR-00F2FE?style=for-the-badge&logo=kalilinux&logoColor=black" /></a>
+  </p>
+</div>
 
 ---
 
-## 🎯 Executive Security Profile
+## 🛡️ Executive Security Profile
 
-I am a **Cyber Security & Digital Forensics Specialist** dedicated to defending network infrastructure, investigating digital incidents at the disk, memory, and packet level, and eliminating critical web/API vulnerabilities.
+I am a **Cyber Security & Digital Forensics (DFIR) Specialist** focused on enterprise network defense, deep packet inspection, memory/disk incident forensics, and offensive web vulnerability auditing.
 
-While **Cyber Security & Digital Forensics (DFIR)** is my primary profession, I pair it with strong software engineering skills in **Python (cryptography & socket servers), Microsoft SQL Server (T-SQL), and Full-Stack MERN development** so I can audit, build, and harden systems from the hardware register up to the cloud API.
+My **Master Profession is Cyber Security & Digital Forensics**, reinforced by advanced software engineering skills in **Python Cryptographic Socket Servers, Enterprise Microsoft SQL Server (T-SQL), Full-Stack MERN Architecture, and x86 Assembly**.
 
 \`\`\`text
 MASTER PROFESSION — CYBER SECURITY & DIGITAL FORENSICS
 ├── Digital Forensics & Incident Response (DFIR)  ████████████████████  100%  [Master Domain]
-├── Network Defense & Deep Packet Inspection      ████████████████████  100%  [Master Domain]
+├── Network Security & Deep Packet Inspection     ████████████████████  100%  [Master Domain]
 ├── Web & API Penetration Testing (OWASP Top 10)  ███████████████████░   96%  [Master Domain]
-└── Threat Intelligence & Cryptographic Security  ███████████████████░   95%  [Master Domain]
+└── Threat Intelligence & Cryptographic Defense   ███████████████████░   95%  [Master Domain]
 
-SUPPORTING ENGINEERING SKILLS — DEVELOPMENT & AUTOMATION
+SUPPORTING ENGINEERING SKILLS — CODE, AUTOMATION & DATABASES
 ├── Python Security Scripting & ECDSA Sockets     ███████████████████░   96%  [Core Dev Skill]
 ├── Enterprise Database Security (MS SQL / T-SQL) ██████████████████░░   92%  [Database Skill]
 ├── Secure Full-Stack Web Dev (MERN Stack)        ██████████████████░░   92%  [Supporting Skill]
@@ -618,33 +663,75 @@ SUPPORTING ENGINEERING SKILLS — DEVELOPMENT & AUTOMATION
 
 ---
 
-## 🧰 Complete Multi-Option Skill Matrix
+## 🎛️ Interactive Skill Options (Click Any Domain Below to Expand)
 
-| Category | Role Classification | Arsenal & Technical Capabilities |
-| :--- | :--- | :--- |
-| **1. Digital Forensics (DFIR)** | **Master Profession** | **Autopsy, FTK Imager, PALADIN OS, DumpIt, Bulk Extractor, ListDLLs** — Bit-stream disk imaging (\`E01\`/\`dd\`), deleted file carving, live RAM analysis, and Windows Registry (\`SAM\`/\`SYSTEM\`) reconstruction. |
-| **2. Network & SOC Defense** | **Master Profession** | **Wireshark, Nmap, Suricata IDS, tcpdump, Aircrack-ng, Cisco Packet Tracer** — Deep packet inspection, protocol anomaly hunting, port/service enumeration, and LAN/WAN segmentation. |
-| **3. Web & API PenTesting** | **Master Profession** | **Burp Suite, Kali Linux, OWASP Top 10, Google Dorking** — Auditing Broken Access Control (IDOR), SQL/NoSQL Injection, JWT/Cookie session flaws, and authentication bypasses. |
-| **4. Python & Cryptography** | **Core Dev Skill** | **Python 3.11, \`ecdsa\`, \`hashlib\`, \`socket\`, OpenCV** — Building cryptographic TCP socket servers, digital signature validators, SHA-256 hash chains, and security automation scripts. |
-| **5. Full-Stack MERN & SQL** | **Supporting Skill** | **Node.js, Express.js, React.js, MongoDB Atlas, MS SQL Server (T-SQL), 8086 Assembly** — Engineering RBAC-hardened web apps, normalized 10-table SQL databases, and low-level hardware engines. |
+<details open>
+<summary><b>🕵️‍♂️ OPTION 1 — MASTER PROFESSION: Digital Forensics & Incident Response (DFIR)</b></summary>
+<br/>
+
+- **Bit-Stream Disk Imaging & Carving:** Write-blocked physical disk acquisition (\`E01\`, \`AFF\`, \`dd\`), hash verification, and deleted artifact recovery using **FTK Imager** and **PALADIN OS**.
+- **Volatile Memory Forensics:** Live RAM acquisition and process/DLL analysis via **DumpIt**, **Bulk Extractor**, and **ListDLLs** to expose injected code and active C2 connections.
+- **Registry & OS Reconstruction:** Deep forensic investigation in **Autopsy** across Windows Registry hives (\`SAM\`, \`SYSTEM\`, \`NTUSER.DAT\`), MRU lists, and user timelines.
+</details>
+
+<details>
+<summary><b>🌐 OPTION 2 — MASTER PROFESSION: Network Security, SOC & Deep Packet Inspection</b></summary>
+<br/>
+
+- **Deep Packet Inspection (DPI):** Live traffic capture, TCP handshake analysis, and protocol anomaly hunting via **Wireshark** and **tcpdump**.
+- **Network Reconnaissance & Wireless Auditing:** Host discovery, port/service enumeration, OS fingerprinting, and wireless auditing with **Nmap** and **Aircrack-ng**.
+- **Intrusion Detection & Perimeter Defense:** **Suricata IDS** rule monitoring, enterprise LAN/WAN segmentation, VLAN hardening, and **Cisco Packet Tracer** architectures.
+</details>
+
+<details>
+<summary><b>🎯 OPTION 3 — MASTER PROFESSION: Offensive Web Penetration Testing (OWASP)</b></summary>
+<br/>
+
+- **Web & API Vulnerability Auditing:** Intercepting and mutating HTTP/HTTPS traffic in **Burp Suite** to uncover **Broken Access Control (IDOR)**, **SQL/NoSQL Injection**, and **XSS**.
+- **Session & Token Exploitation:** Auditing **JWT** implementations, cookie flags (\`HttpOnly\`, \`Secure\`, \`SameSite\`), and authentication bypasses in **Kali Linux**.
+</details>
+
+<details>
+<summary><b>🐍 OPTION 4 — CORE DEV SKILL: Python Cryptographic & Socket Engineering</b></summary>
+<br/>
+
+- **Cryptographic Protocols:** Engineering **ECDSA** digital signature validators (\`ecdsa\`), **SHA-256** hash chains (\`hashlib\`), custom cipher algorithms, and double-spend detection.
+- **Network Socket Servers:** Multi-threaded TCP/UDP client-server engines (\`socket\`), automated security scanners, and **OpenCV** vision pipelines.
+</details>
+
+<details>
+<summary><b>💻 OPTION 5 — SUPPORTING SKILL: Secure MERN Stack, Enterprise SQL & x86 Assembly</b></summary>
+<br/>
+
+- **Full-Stack MERN (Supporting Skill):** Building hardened **Node.js, Express.js, React.js & MongoDB Atlas** platforms with strict **RBAC** middleware, JWT guards, and input sanitization.
+- **Enterprise Relational Databases:** 10-table normalized **MS SQL Server (T-SQL)** databases with stored procedures, triggers, and foreign-key constraints.
+- **Low-Level Microprocessor Systems:** 16-bit real-mode **Intel 8086 Assembly (\`EMU8086\`)** utilizing direct \`0B800h\` video memory and BIOS interrupts.
+</details>
+
+<br/>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=kali,linux,bash,py,mysql,nodejs,express,react,mongodb,js,git,github,vscode,postman&perline=7" />
+</div>
 
 ---
 
-## 🔬 Security Architect Blueprint (\`cyber_architect.py\`)
+## 🔬 Command-Line Security Blueprint (\`cyber_architect.py\`)
 
 \`\`\`python
-class CyberSecurityArchitect:
+#!/usr/bin/env python3
+class PrincipalCyberSecurityArchitect:
     def __init__(self):
-        self.name = "Ali Hassan Jamil"
+        self.operator = "Ali Hassan Jamil"
         self.master_profession = "Cyber Security & Digital Forensics (DFIR)"
         self.supporting_skills = ["Python Cryptography", "MERN Stack", "MS SQL Server", "x86 Assembly"]
 
-    def operational_arsenal(self) -> dict:
+    def execute_defense_matrix(self) -> dict:
         return {
             "DFIR_Forensics" : ["Autopsy", "FTK Imager", "PALADIN OS", "DumpIt", "Bulk Extractor"],
-            "Network_Defense": ["Wireshark", "Nmap", "Suricata IDS", "tcpdump", "Kali Linux"],
-            "Web_PenTesting" : ["Burp Suite", "OWASP Top 10", "JWT/Cookie Auditing", "IDOR/SQLi"],
-            "Dev_And_Crypto" : ["Python ECDSA Sockets", "Node.js/Express/React/MongoDB", "T-SQL"]
+            "Network_Defense": ["Wireshark DPI", "Nmap", "Suricata IDS", "tcpdump", "Kali Linux"],
+            "Web_PenTesting" : ["Burp Suite", "OWASP Top 10", "IDOR/SQLi", "JWT Security"],
+            "Python_And_Dev" : ["ECDSA Socket Servers", "Node/Express/React/MongoDB", "T-SQL"]
         }
 \`\`\`
 
@@ -652,24 +739,37 @@ class CyberSecurityArchitect:
 
 ## 📂 Flagship Security Operations & Engineering Repositories
 
-| Repository / Project | Domain Classification | Technical Summary |
+| Operation / Repository | Classification | Technical Architecture & Security Impact |
 | :--- | :--- | :--- |
-| **\`DFIR-Memory-And-Registry-Forensics\`** | **Master: Digital Forensics** | Forensic disk imaging (\`E01\`), volatile RAM string extraction, and Windows Registry/SAM investigation using **Autopsy, FTK Imager & PALADIN**. |
-| **\`Wireshark-Enterprise-Packet-Forensics\`** | **Master: Network Security** | Deep packet inspection playbooks isolating SYN port sweeps, DNS anomalies, and unauthorized traffic across Linux and Windows networks. |
-| **\`GoofyCoin-ECDSA-Crypto-Server\`** | **Skill: Python Cryptography** | Custom Python TCP socket server enforcing **ECDSA** digital signatures, cryptographic hash chains, and real-time double-spend detection. |
-| **\`LGU-ONE-ZeroTrust-Campus-LMS\`** | **Master: Security Architecture** | Connected campus ecosystem blueprint engineered with strict Role-Based Access Control (RBAC) and segmented API gateways. |
-| **\`DHA-Enterprise-SQL-Database-System\`** | **Skill: Database Security** | 10-table normalized **MS SQL Server (T-SQL)** database featuring stored procedures, triggers, foreign-key integrity, and financial audit queries. |
-| **\`Hardened-MultiVendor-MERN-Platform\`** | **Skill: Full-Stack MERN** | **Node.js, Express, React & MongoDB** platform built with strict JWT session guards, RBAC middleware, and sanitized database schemas. |
-| **\`x86-RealMode-8086-Assembly-Engine\`** | **Skill: Low-Level Systems** | 16-bit **Intel 8086 Assembly** game engine utilizing direct \`0B800h\` video memory addressing and BIOS hardware interrupts. |
+| 🕵️‍♂️ **\`DFIR-Memory-And-Registry-Forensics\`** | **Master: Digital Forensics** | Bit-stream disk imaging (\`E01\`), volatile RAM string carving, and Windows Registry/SAM reconstruction in **Autopsy & FTK Imager**. |
+| 🌐 **\`Wireshark-Enterprise-Packet-Forensics\`** | **Master: Network Security** | Deep packet inspection playbooks isolating SYN port sweeps, DNS anomalies, and unauthorized exfiltration across Linux & Windows. |
+| 🔐 **\`GoofyCoin-ECDSA-Crypto-Server\`** | **Skill: Python Cryptography** | Custom Python TCP socket server enforcing **ECDSA** digital signatures, SHA-256 transaction chains, and double-spend detection. |
+| 🛡️ **\`LGU-ONE-ZeroTrust-Campus-LMS\`** | **Master: Security Architecture** | Connected campus ecosystem blueprint engineered with strict Role-Based Access Control (RBAC) and segmented API gateways. |
+| 🏢 **\`DHA-Enterprise-SQL-Database-System\`** | **Skill: Database Security** | 10-table normalized **MS SQL Server (T-SQL)** database featuring stored procedures, triggers, and financial audit queries. |
+| 💻 **\`Hardened-MultiVendor-MERN-Platform\`** | **Skill: Full-Stack MERN** | **Node.js, Express, React & MongoDB** platform built with strict JWT session validation, RBAC route guards, and sanitized schemas. |
+| ⚙️ **\`x86-RealMode-8086-Assembly-Engine\`** | **Skill: Low-Level Systems** | 16-bit **Intel 8086 Assembly** engine utilizing direct \`0B800h\` video memory addressing and hardware timer interrupts. |
 
 ---
 
-## 📜 Verified Credentials
+## 📜 Verified Security Certifications
 
-- **Google Cybersecurity Certificate** — *Foundations of Cybersecurity*
-- **Google Cybersecurity Certificate** — *Connect and Protect: Networks and Network Security*
-- **Google Cybersecurity Certificate** — *Tools of the Trade: Linux and SQL*
-- **Google Cybersecurity Certificate** — *Play It Safe: Manage Security Risks*
+- **Google Cybersecurity Specialization** — *Foundations of Cybersecurity*
+- **Google Cybersecurity Specialization** — *Connect and Protect: Networks and Network Security*
+- **Google Cybersecurity Specialization** — *Tools of the Trade: Linux and SQL*
+- **Google Cybersecurity Specialization** — *Play It Safe: Manage Security Risks*
+
+---
+
+## 📊 Live GitHub Telemetry
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=alihassanjamil&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050811&title_color=00f2fe&icon_color=00f2fe&text_color=e2e8f0" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alihassanjamil&layout=compact&theme=tokyonight&hide_border=true&bg_color=050811&title_color=00f2fe&text_color=e2e8f0" height="165" />
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=alihassanjamil&theme=tokyonight&hide_border=true&background=050811&ring=00f2fe&fire=00f2fe&currStreakLabel=00f2fe" height="165" />
+</div>
 `;
 
     let activeCategory = 'all';
@@ -685,7 +785,7 @@ class CyberSecurityArchitect:
       setTimeout(() => {
         toast.classList.add('hidden');
         toast.classList.remove('flex');
-      }, 2800);
+      }, 3000);
     }
 
     function copyTextToClipboard(text, successMsg) {
@@ -844,10 +944,10 @@ class CyberSecurityArchitect:
 
       // Copy GitHub README buttons
       document.getElementById('topCopyReadmeBtn').addEventListener('click', () => {
-        copyTextToClipboard(CLEAN_GITHUB_README, 'GitHub README.md copied to clipboard!');
+        copyTextToClipboard(CLEAN_GITHUB_README, 'GitHub README.md copied! Paste directly into GitHub.');
       });
       document.getElementById('bottomCopyReadmeBtn').addEventListener('click', () => {
-        copyTextToClipboard(CLEAN_GITHUB_README, 'GitHub README.md copied to clipboard!');
+        copyTextToClipboard(CLEAN_GITHUB_README, 'GitHub README.md copied! Paste directly into GitHub.');
       });
 
       if (window.lucide) {
